@@ -1,0 +1,32 @@
+{
+  "name": "aktier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "node-rsa": "^1.0.8",
+    "nodemon": "^2.0.4",
+    "nordnet": "^1.2.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "node-gyp": "^7.0.0",
+    "node-sass": "^4.14.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js -e html,css,js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KasperAPedersen/aktier.git"
+  },
+  "author": "KasperAPedersen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KasperAPedersen/aktier/issues"
+  },
+  "homepage": "https://github.com/KasperAPedersen/aktier#readme"
+}
