@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #FEFFEA;
+}
+
+#swoop {
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+.floatFixer {
+    clear: both;
+}
+
+h2 {
+    font-size: 1em;
+    letter-spacing: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    color: rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* -- Stocks -- */
+
+.stockTab {
+    background-color: #263D42;
+    width: calc(100% - 8px);
+    margin: 4px;
+}
+
+.stockTab>.stockHead {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #263D42;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.5em;
+    position: relative;
+}
+
+.stockTab>.stockHead>p {
+    float: left;
+}
+
+.stockTab>.stockHead>.stockStatus {
+    font-size: .5em;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    text-transform: uppercase;
+}
+
+.stockTab>.stockBody {
+    background-color: #FEFFEA;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.1);
+    transition: 0.3s;
+}
+
+.stockTab>.stockBody>.stockHigh {
+    padding-top: 4px;
+    float: right;
+    color: rgba(0,0,0,.5);
+    letter-spacing: 2px;
+}
+
+.stockTab>.stockBody>.stockLow {
+    padding-top: 4px;
+    float: right;
+    color: rgba(0,0,0,.5);
+    letter-spacing: 2px;
+}
+
+.stockTab>.stockBody>.stockProfit {
+    padding-top: 4px;
+    float: left;
+    color: rgba(0,0,0,.5);
+    letter-spacing: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+    h2 {
+        font-size: 1.5em;
+        letter-spacing: 5px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .stockTab {
+        width: calc(50% - 8px);
+        margin: 4px;
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    h2 {
+        font-size: 2em;
+        letter-spacing: 5px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .stockTab {
+        width: calc(33.3% - 8px);
+        margin: 4px;
+        float: left;
+    }
+}
