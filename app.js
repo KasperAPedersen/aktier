@@ -1,5 +1,7 @@
 
 // --
+let logMessages = true;
+let logHTTPRequests = false;
 let usePort = 80;
 let stocks = [
     "https://www.nordnet.dk/markedet/aktiekurser/16129173-wirecard",
@@ -18,11 +20,11 @@ let express = require('express');
 let request = require('request');
 let app = new express();
 
-app.use(morgan('dev'));
+if(logHTTPRequests) app.use(morgan('dev'));
 app.use(express.static('public'));
 
 app.listen(usePort, (err) => {
-    console.log(err ? err : `Listening on port ${usePort}`);
+    if(logMessages) err ? msg("err", 0, err) : msg("", 0, `Listening on port ${usePort}`);
 });
 
 app.get('/get', (req, res) => {
@@ -35,13 +37,33 @@ app.get('/get', (req, res) => {
                     });
                     res.end();
                 } else {
-                    console.log('Something went wrong!');
+                    if(logMessages) msg("stockErr", req.query["stock"], "Something went wrong!");
                 }
             });
         } else {
-            console.log('The stock index doesn\'t exist!');
+            if(logMessages) msg("warn", req.query["stock"], "The stock index doesn\'t exist!");
         }
     } else {
-        console.log("Missing stock index");
+        if(logMessages) msg("stockErr", req.query["stock"], "Missing stock index");
     }
 });
+
+
+function msg(type, stock, msg) {
+    let temp = "";
+    switch(type) {
+        case 'err':
+            temp = `[!] ${msg}`;
+            break;
+        case 'stockErr':
+            temp = `[!] ${msg} @ stock ${stock}`;
+            break;
+        case 'warn':
+            temp = `[#] ${msg} @ stock ${stock}`;
+            break;
+        default:
+            temp = `[~] ${msg}`;
+            break;
+    }
+    console.log(temp);
+}
