@@ -1,3 +1,4 @@
+let stockUpdateInterval = 2500;
 let stocks = [
     // Name, valuta, currVal, currProfit, low, high, status, currValSearch, currProfitSearch, lowSearch, highSearch, statusSearch
     ["Wirecard AG", "EUR",  0, 0, 0, 0, "åben", "Typography__Span-sc-10mju41-0 efGqYn Typography__StyledTypography-sc-10mju41-1 dKBtpx StatsBox__StyledPriceText-sc-1p4v3dm-2 cfKViN", "Development__StyledDevelopment-hnn1ri-0 OjNHA", "Typography__Span-sc-10mju41-0 efGqYn Typography__StyledTypography-sc-10mju41-1 jILKmC StatsBox__StyledPriceText-sc-1p4v3dm-2 cfKViN", "Typography__Span-sc-10mju41-0 efGqYn Typography__StyledTypography-sc-10mju41-1 jILKmC StatsBox__StyledPriceText-sc-1p4v3dm-2 cfKViN", "Typography__Span-sc-10mju41-0 efGqYn Typography__StyledTypography-sc-10mju41-1 dXsYiZ"],
@@ -21,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
         for(let i = 0; i < stocks.length; i++) {
             updateStock(i);
         }
-    }, 1000);
+    }, stockUpdateInterval);
 });
 
 function updateStock(stock){
