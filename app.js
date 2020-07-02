@@ -1,6 +1,6 @@
 
 // --
-let usePort = 3000;
+let usePort = 80;
 let stocks = [
     "https://www.nordnet.dk/markedet/aktiekurser/16129173-wirecard",
     "https://www.nordnet.dk/markedet/aktiekurser/16105606-norwegian-air-shuttle",
