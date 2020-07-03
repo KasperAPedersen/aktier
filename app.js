@@ -11,7 +11,8 @@ let stocks = [
     "https://www.nordnet.dk/markedet/aktiekurser/16100065-h-lundbeck",
     "https://www.nordnet.dk/markedet/aktiekurser/16100078-sas",
     "https://www.nordnet.dk/markedet/aktiekurser/17258080-fom-technologies",
-    "https://www.nordnet.dk/markedet/aktiekurser/16270886-iss"
+    "https://www.nordnet.dk/markedet/aktiekurser/16270886-iss",
+    "https://www.nordnet.dk/markedet/aktiekurser/16122008-marriott-international-class"
 ];
 // --
 
