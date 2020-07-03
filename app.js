@@ -13,7 +13,8 @@ let stocks = [
     "https://www.nordnet.dk/markedet/aktiekurser/17258080-fom-technologies",
     "https://www.nordnet.dk/markedet/aktiekurser/16270886-iss",
     "https://www.nordnet.dk/markedet/aktiekurser/16122008-marriott-international-class",
-    "https://www.nordnet.dk/markedet/aktiekurser/16123286-marriott-vacations-worldwide"
+    "https://www.nordnet.dk/markedet/aktiekurser/16123286-marriott-vacations-worldwide",
+    "https://www.nordnet.dk/markedet/aktiekurser/16118720-gilead-sciences"
 ];
 // --
 
