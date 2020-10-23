@@ -12,11 +12,13 @@ let stocks = [
     "https://www.nordnet.dk/markedet/aktiekurser/16100078-sas",
     "https://www.nordnet.dk/markedet/aktiekurser/17258080-fom-technologies",
     "https://www.nordnet.dk/markedet/aktiekurser/16270886-iss",
-    "https://www.nordnet.dk/markedet/aktiekurser/16122008-marriott-international-class",
-    "https://www.nordnet.dk/markedet/aktiekurser/16123286-marriott-vacations-worldwide",
     "https://www.nordnet.dk/markedet/aktiekurser/16214690-gilead-sciences",
     "https://www.nordnet.dk/markedet/aktiekurser/16118251-asml-holding-new",
-    "https://www.nordnet.dk/markedet/aktiekurser/16874444-netcompany-group"
+    "https://www.nordnet.dk/markedet/aktiekurser/16874444-netcompany-group",
+    "https://www.nordnet.dk/markedet/aktiekurser/16620627-walmart",
+    "https://www.nordnet.dk/markedet/aktiekurser/17351617-unity-software",
+    "https://www.nordnet.dk/markedet/aktiekurser/16122623-plantronics",
+    "https://www.nordnet.dk/markedet/aktiekurser/16121016-discover-financial-services"
 ];
 // --
 
